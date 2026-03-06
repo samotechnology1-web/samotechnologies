@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAMO Technologies</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b0b0c;color:#fff;line-height:1.6}
+
+header{position:fixed;width:100%;top:0;background:rgba(0,0,0,0.95);display:flex;justify-content:space-between;align-items:center;padding:18px 70px;border-bottom:1px solid #222;z-index:1000}
+
+.logo{font-size:24px;font-weight:700;color:silver;letter-spacing:2px}
+.logo span{color:#fff;font-weight:400}
+
+nav a{margin-left:30px;text-decoration:none;color:#ddd;font-size:14px;transition:0.3s}
+nav a:hover{color:silver}
+
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:linear-gradient(180deg,#0b0b0c,#151517)}
+
+.hero h1{font-size:60px;color:silver;margin-bottom:20px}
+.hero p{max-width:750px;color:#bbb;font-size:20px;margin-bottom:40px}
+
+.btn{background:silver;color:black;padding:15px 36px;border-radius:40px;text-decoration:none;font-weight:600;transition:0.3s}
+.btn:hover{transform:scale(1.07)}
+
+section{padding:110px 70px}
+
+.section-title{text-align:center;font-size:38px;margin-bottom:60px;color:silver}
+
+.about{max-width:900px;margin:auto;text-align:center;color:#ccc;font-size:18px}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+
+.card{background:#151517;padding:35px;border-radius:14px;border:1px solid #2a2a2a;transition:0.3s}
+.card:hover{transform:translateY(-10px);border-color:silver}
+.card h3{color:silver;margin-bottom:10px}
+.card p{color:#aaa;font-size:15px}
+
+.brands{margin-top:10px;font-size:14px;color:#bbb}
+
+.brand-section{text-align:center;margin-top:70px}
+.brand-logos{margin-top:20px;color:#ccc;font-size:16px}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:30px;text-align:center;margin-top:60px}
+.stat-box{background:#151517;padding:30px;border-radius:10px}
+.stat-box h3{color:silver;font-size:28px}
+.stat-box p{color:#aaa}
+
+.contact-wrapper{max-width:750px;margin:auto}
+.contact-info{text-align:center;margin-bottom:35px;color:#ccc;line-height:1.8}
+
+form{display:flex;flex-direction:column;gap:15px}
+input,textarea{padding:14px;border:none;border-radius:6px}
+button{padding:14px;background:silver;border:none;font-weight:600;border-radius:6px}
+
+footer{background:#000;padding:40px 20px;text-align:center;color:#aaa;border-top:1px solid #222}
+
+.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-size:14px;box-shadow:0 5px 15px rgba(0,0,0,0.3)}
+
+@media(max-width:768px){
+.hero h1{font-size:40px}
+header{padding:15px 25px}
+section{padding:90px 25px}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">SAMO <span>Technologies</span></div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Enterprise IT Hardware & Software Solutions</h1>
+<p>Helping businesses build reliable IT infrastructure with professional hardware supply, software deployment and enterprise technical support.</p>
+<a href="#contact" class="btn">Contact Us</a>
+</section>
+
+<section id="about">
+<h2 class="section-title">About SAMO Technologies</h2>
+<p class="about">SAMO Technologies is an IT hardware and software solutions company based in Bengaluru, Karnataka, India. We provide enterprise laptops, desktops, networking infrastructure, licensed software solutions and complete IT support for startups, offices and corporate businesses.</p>
+
+<div class="stats">
+<div class="stat-box"><h3>100+</h3><p>Devices Supplied</p></div>
+<div class="stat-box"><h3>50+</h3><p>Business Clients</p></div>
+<div class="stat-box"><h3>24/7</h3><p>Technical Support</p></div>
+<div class="stat-box"><h3>5+</h3><p>Years Experience</p></div>
+</div>
+
+</section>
+
+<section id="services">
+<h2 class="section-title">Our IT Services</h2>
+<div class="services">
+
+<div class="card">
+<h3>IT Hardware Services</h3>
+<p>Supply, installation and maintenance of laptops, desktops, servers and enterprise IT hardware.</p>
+<div class="brands">Brands: Apple MacBook, Dell, HP, Lenovo, Acer, Asus</div>
+</div>
+
+<div class="card">
+<h3>Laptop & Desktop Sales</h3>
+<p>Business laptops, workstations and desktops for startups and enterprise offices.</p>
+<div class="brands">Brands: Dell, HP, Lenovo, Asus, Acer, Apple</div>
+</div>
+
+<div class="card">
+<h3>Networking Solutions</h3>
+<p>Office networking setup including routers, switches, firewall configuration and secure internet infrastructure.</p>
+</div>
+
+<div class="card">
+<h3>Software Services</h3>
+<p>Professional software installation, system configuration and enterprise software deployment.</p>
+<div class="brands">Solutions: Windows Installation, Microsoft Office 365, Adobe Software, Antivirus Security</div>
+</div>
+
+<div class="card">
+<h3>Software Licensing</h3>
+<p>Official licensed software supply and activation for business environments.</p>
+<div class="brands">Software: Microsoft Windows, Microsoft Office 365, Adobe</div>
+</div>
+
+<div class="card">
+<h3>IT Support & Maintenance</h3>
+<p>Annual maintenance contracts, troubleshooting and on‑site technical support.</p>
+</div>
+
+</div>
+
+<div class="brand-section">
+<h3>Trusted Technology Brands</h3>
+<div class="brand-logos">Apple • Dell • HP • Lenovo • Asus • Acer • Microsoft • Adobe</div>
+</div>
+
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact SAMO Technologies</h2>
+<div class="contact-wrapper">
+
+<div class="contact-info">
+<p><strong>Phone:</strong> 7899591748 / 9110261302</p>
+<p><strong>Email:</strong> info@samotechnologies.com</p>
+<p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
+</div>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 SAMO Technologies. All rights reserved.</p>
+<p>Bengaluru, Karnataka, India</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917899591748">Chat on WhatsApp</a>
+
+</body>
+</html>
